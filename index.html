@@ -28,7 +28,13 @@
   </p>
   <div class="game-container">
     <div class="d-flex justify-content-center mb-5 btn-wrapper">
-      <button type="button" id="start-game" class="btn btn-lg btn-secondary">Let's get started</button>
+       <button type="button" id="start-game" class="btn btn-lg btn-secondary">Let's get started</button>
+       <button type="button" id="shuffle-cards" class="btn btn-lg btn-secondary">Shuffle</button>
+       <button type="button" id="hide-cards" class="btn btn-lg btn-secondary" onclick="this.classList.toggle('cards-wrapper.flip');">Show/hide</button>
+       <!-- With the code above I've added a toggle for when you click on the Show/Hide button to access the CSS class cards-wrapper.flip
+       so that when it's clicked it flips the cards as per the example browser. This doesn't work, I tried this also in the cards-wrapper div
+       but it also didn't work. I'm not sure why this isn't working but would love feedback in a face to face interview.  -->
+       <button type="button" id="magic-cards" class="btn btn-lg btn-secondary">Magic</button>
     </div>
     <div class="cards-wrapper mx-4 position-relative text-center">
     </div>
@@ -38,3 +44,12 @@
   </div>
 </body>
 </html>
+<!--
+COMMENTS
+The following parts of the test I've been unable to complete as I spent alot of time to get the other parts
+of the code working and trying many different things:
+Magic: Remove all related cards from the deck after picking a card. (Only display this button after a card has been picked).
+[Have created a button for this]
+Create the functionality to pick a card, by clicking on a random card.
+When the trick is performed (by clicking the magic button), move the related cards to the picked card.
+ -->
